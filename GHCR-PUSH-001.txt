@@ -1,0 +1,6 @@
+# DATE: 16.03.2024
+OK docker run -it --rm kms-node16-bullseye sh
+OK docker login ghcr.io -u ksmgen
+IN {key::classic-root-peregrine}
+OK docker tag kms-node16-bullseye ghcr.io/ksmgen/kms-node16-bullseye:latest
+OK docker push ghcr.io/ksmgen/kms-node16-bullseye:latest
